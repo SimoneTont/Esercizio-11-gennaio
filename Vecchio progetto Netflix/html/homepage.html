@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!--Logo-->
+        <a class="navbar-brand" href="#"><img src="../assets/netflix_logo.png" alt="netflix_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+              
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">My List</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="d-flex justify-content-between align-items-center p-4">
+          <!--Search bar-->
+          <i id="SearchButton" class="bi bi-search text-light m-4" onclick="SearchBar()"></i>
+          <input type="text" placeholder="Type to search">
+          <!--Fine search bar-->
+          <p class="text-light mt-4">KIDS</p>
+          <i class="bi bi-bell-fill text-light m-4"></i>
+          <img src="../assets/avatar.png" alt="UserAvatar" id="AvatarImg">
+        </div>
+      </nav>
+      <div class="d-flex justify-content-between align-items-center">
+        <div >
+          <div class="d-flex align-items-center">
+            <h2 class="text-white ms-4">TV Shows</h2>
+            <!--Genres-->
+            <div class="dropdown m-4 border border-1 border-white">
+              <button class="dropbtn">Genres</button>
+              <div class="dropdown-content">
+                <a href="#">Sci-Fi</a>
+                <a href="#">Horror</a>
+                <a href="#">Mistery</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex">
+            <div class="border border-1 border-white h-50 d-flex align-items-center">
+              <i class="bi bi-bar-chart-fill text-white m-3"></i>
+            </div>
+            <div class="border border-1 border-white h-50 d-flex align-items-center me-5">
+              <i class="bi bi-grid text-white m-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Carosello trending-->
+        <h2 class="text-white">Trending now</h2>
+        <div class="wrapper">
+          <section id="section1">
+            <a href="#section3"></a>
+              <div class="item">
+                <img src="../assets/media0.webp" alt="Carosello1">
+              </div>
+              <div class="item">
+                <img src="../assets/media1.jpg" alt="Carosello2">
+              </div>
+              <div class="item">
+                <img src="../assets/media2.webp" alt="Carosello3">
+              </div>
+              <div class="item">
+                <img src="../assets/media3.webp" alt="Carosello4">
+              </div>
+              <div class="item">
+                <img src="../assets/media4.jpg" alt="Carosello5">
+              </div>
+            <a href="#section2"></a>
+          </section>
+
+          <section id="section2">
+            <a href="#section1"></a>
+              <div class="item">
+                <img src="../assets/media5.webp" alt="Carosello6">
+              </div>
+              <div class="item">
+                <img src="../assets/media6.webp" alt="Carosello7">
+              </div>
+              <div class="item">
+                <img src="../assets/media7.webp" alt="Carosello8">
+              </div>
+              <div class="item">
+                <img src="../assets/media8.webp" alt="Carosello9">
+              </div>
+              <div class="item">
+                <img src="../assets/media9.jpg" alt="Carosello10">
+              </div>
+            <a href="#section3"></a>
+          </section>
+        
+          <section id="section3">
+            <a href="#section2"></a>
+              <div class="item">
+                <img src="../assets/media10.jpg" alt="Carosello11">
+              </div>
+              <div class="item">
+                <img src="../assets/media11.jpg" alt="Carosello12">
+              </div>
+              <div class="item">
+                <img src="../assets/media12.jpg" alt="Carosello13">
+              </div>
+              <div class="item">
+                <img src="../assets/media13.jpg" alt="Carosello14">
+              </div>
+              <div class="item">
+                <img src="../assets/media14.webp" alt="Carosello15">
+              </div>
+            <a href="#section1"></a>
+          </section>
+        </div>
+        <!--Watch it again-->
+        <h2 class="text-white">Watch It Again</h2>
+        <div class="wrapper">
+          <section id="section4">
+            <a href="#section6"></a>
+              <div class="item">
+                <img src="../assets/media0.webp" alt="Carosello1">
+              </div>
+              <div class="item">
+                <img src="../assets/media1.jpg" alt="Carosello2">
+              </div>
+              <div class="item">
+                <img src="../assets/media2.webp" alt="Carosello3">
+              </div>
+              <div class="item">
+                <img src="../assets/media3.webp" alt="Carosello4">
+              </div>
+              <div class="item">
+                <img src="../assets/media4.jpg" alt="Carosello5">
+              </div>
+            <a href="#section5"></a>
+          </section>
+
+          <section id="section5">
+            <a href="#section4"></a>
+              <div class="item">
+                <img src="../assets/media5.webp" alt="Carosello6">
+              </div>
+              <div class="item">
+                <img src="../assets/media6.webp" alt="Carosello7">
+              </div>
+              <div class="item">
+                <img src="../assets/media7.webp" alt="Carosello8">
+              </div>
+              <div class="item">
+                <img src="../assets/media8.webp" alt="Carosello9">
+              </div>
+              <div class="item">
+                <img src="../assets/media9.jpg" alt="Carosello10">
+              </div>
+            <a href="#section6"></a>
+          </section>
+        
+          <section id="section6">
+            <a href="#section5"></a>
+              <div class="item">
+                <img src="../assets/media10.jpg" alt="Carosello11">
+              </div>
+              <div class="item">
+                <img src="../assets/media11.jpg" alt="Carosello12">
+              </div>
+              <div class="item">
+                <img src="../assets/media12.jpg" alt="Carosello13">
+              </div>
+              <div class="item">
+                <img src="../assets/media13.jpg" alt="Carosello14">
+              </div>
+              <div class="item">
+                <img src="../assets/media14.webp" alt="Carosello15">
+              </div>
+            <a href="#section4"></a>
+          </section>
+        </div>
+        <!--New Releases-->
+        <h2 class="text-white">New Releases</h2>
+        <div class="wrapper">
+          <section id="section7">
+            <a href="#section9"></a>
+              <div class="item">
+                <img src="../assets/media0.webp" alt="Carosello1">
+              </div>
+              <div class="item">
+                <img src="../assets/media1.jpg" alt="Carosello2">
+              </div>
+              <div class="item">
+                <img src="../assets/media2.webp" alt="Carosello3">
+              </div>
+              <div class="item">
+                <img src="../assets/media3.webp" alt="Carosello4">
+              </div>
+              <div class="item">
+                <img src="../assets/media4.jpg" alt="Carosello5">
+              </div>
+            <a href="#section8"></a>
+          </section>
+
+          <section id="section8">
+            <a href="#section7"></a>
+              <div class="item">
+                <img src="../assets/media5.webp" alt="Carosello6">
+              </div>
+              <div class="item">
+                <img src="../assets/media6.webp" alt="Carosello7">
+              </div>
+              <div class="item">
+                <img src="../assets/media7.webp" alt="Carosello8">
+              </div>
+              <div class="item">
+                <img src="../assets/media8.webp" alt="Carosello9">
+              </div>
+              <div class="item">
+                <img src="../assets/media9.jpg" alt="Carosello10">
+              </div>
+            <a href="#section9"></a>
+          </section>
+        
+          <section id="section9">
+            <a href="#section8"></a>
+              <div class="item">
+                <img src="../assets/media10.jpg" alt="Carosello11">
+              </div>
+              <div class="item">
+                <img src="../assets/media11.jpg" alt="Carosello12">
+              </div>
+              <div class="item">
+                <img src="../assets/media12.jpg" alt="Carosello13">
+              </div>
+              <div class="item">
+                <img src="../assets/media13.jpg" alt="Carosello14">
+              </div>
+              <div class="item">
+                <img src="../assets/media14.webp" alt="Carosello15">
+              </div>
+            <a href="#section7"></a>
+          </section>
+        </div>
+    </main>
+    <footer class="d-flex justify-content-center">
+      <div class="d-flex flex-column">
+        <div>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+        <!--colonne-->
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <p>Audio and subtitles</p>
+            </div>
+            <div class="col-3">
+              <p>Audio Description</p>
+            </div>
+            <div class="col-3">
+              <p>Help center</p>
+            </div>
+            <div class="col-3">
+              <p>Gift cards</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <p>Media Center</p>
+            </div>
+            <div class="col-3">
+              <p>Investor relations</p>
+            </div>
+            <div class="col-3">
+              <p>Jobs</p>
+            </div>
+            <div class="col-3">
+              <p>Terms of Use</p>
+            </div>
+            <div class="col-3">
+              <p>Contact us</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="d-inline p-2 border border-secondary">Service code</p>
+        </div>
+        <p class="mb-2">&#169 1997-2019 Netflix,Inc. {ID di Netflix}</p>
+      </div>
+    </footer>
+    <!--Js-->
+    <script src="../../Bootstrap/bootstrap-5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
