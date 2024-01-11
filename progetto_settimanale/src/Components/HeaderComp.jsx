@@ -1,14 +1,16 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 export default function HeaderComp() {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <Navbar className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand" href="#"><img src="../assets/netflix_logo.png" alt="netflix_logo"></img></a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                </button>
+                </Button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
@@ -36,7 +38,7 @@ export default function HeaderComp() {
                     <i className="bi bi-bell-fill text-light m-4"></i>
                     <img src="../assets/avatar.png" alt="UserAvatar" id="AvatarImg"></img>
                 </div>
-            </nav>
+            </Navbar>
             <div className="d-flex justify-content-between align-items-center">
                 <div>
                     <div className="d-flex align-items-center">
