@@ -1,12 +1,12 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
+import { Image, Navbar, Button} from 'react-bootstrap';
+
 
 export default function HeaderComp() {
     return (
         <header>
             <Navbar className="navbar navbar-expand-lg navbar-light">
-                <a className="navbar-brand" href="#"><img src="../assets/netflix_logo.png" alt="netflix_logo"></img></a>
+                <a className="navbar-brand" href="#"><Image src="../assets/netflix_logo.png" alt="netflix_logo"></Image></a>
                 <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@ export default function HeaderComp() {
                     <input type="text" placeholder="Type to search"></input>
                     <p className="text-light mt-4">KIDS</p>
                     <i className="bi bi-bell-fill text-light m-4"></i>
-                    <img src="../assets/avatar.png" alt="UserAvatar" id="AvatarImg"></img>
+                    <Image src="../assets/avatar.png" alt="UserAvatar" id="AvatarImg"></Image>
                 </div>
             </Navbar>
             <div className="d-flex justify-content-between align-items-center">

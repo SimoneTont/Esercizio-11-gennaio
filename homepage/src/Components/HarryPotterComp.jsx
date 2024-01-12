@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Spinner, Alert } from 'react-bootstrap'
+import { Spinner, Alert, Col, Row } from 'react-bootstrap'
 let URL = "https://www.omdbapi.com/?apikey=f8bd2434&s=harry%20potter"
 
 export default class HarryPotterComp extends Component {
@@ -49,12 +49,12 @@ export default class HarryPotterComp extends Component {
             Loading Error
           </Alert>
         }
-        <div className="row">
+        <Row>
           {this.state.movies.map(m => (
-            <div className="col">
+            <Col>
               <img className="img-fluid" src={m.Poster} alt="Carosello1"></img>
-            </div>))}
-        </div>
+            </Col>))}
+        </Row>
       </div>
 
     )

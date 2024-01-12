@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Spinner, Alert } from 'react-bootstrap'
-let URL = "https://www.omdbapi.com/?apikey=f8bd2434&s=lord%20of%20the%20rings"
+import { Spinner, Alert, Col, Row } from 'react-bootstrap'
+let URL = "https://www.omdbapi.com/?apikey=f8bd2434&s=avengers"
 
 export default class HarryPotterComp extends Component {
   state = {
@@ -22,7 +22,7 @@ export default class HarryPotterComp extends Component {
             movies: data.Search,
             isLoading: false
           })
-        }, 1000)
+        }, 3000)
       } else {
         console.log('error while fetching')
         this.setState({
@@ -49,12 +49,12 @@ export default class HarryPotterComp extends Component {
             Loading Error
           </Alert>
         }
-        <div className="row">
+        <Row>
           {this.state.movies.map(m => (
-            <div className="col">
+            <Col>
               <img className="img-fluid" src={m.Poster} alt="Carosello1"></img>
-            </div>))}
-        </div>
+            </Col>))}
+        </Row>
       </div>
 
     )
