@@ -1,22 +1,19 @@
 import './App.css';
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import HeaderComp from './Components/HeaderComp';
+import ProfileComp1 from './Components/ProfileData';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"></link>
+      </head>
+      <body className='bodyBg'>
+        <HeaderComp></HeaderComp>
+        <main class="d-flex flex-column align-items-center">
+           <ProfileComp1></ProfileComp1> 
+        </main>
+      </body>
     </div>
   );
 }

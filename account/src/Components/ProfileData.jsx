@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <img src="../assets/netflix_logo.png" alt="netflix_logo">
-    </header>
-    <main class="d-flex flex-column align-items-center">
+import React from 'react';
+export default function ProfileComp1() {
+    return (
         <div class="d-flex flex-column justify-content-center">
             <h1 class="text-secondary">Edit Profile</h1>
             <div class="d-flex border-top pt-3 border-secondary">
                 <div class="position-relative">
                     <div>
-                        <img src="../assets/avatar.png" alt="UserAvatar" id="AvatarImg">
+                        <img src="../assets/avatar.png" alt="UserAvatar" id="AvatarImg"></img>
                         <i class="bi bi-pencil-fill text-white bg-black position-absolute bottom-0 start-0 border border-2 border-light rounded-circle p-1"></i>
                     </div>
                 </div>
                 <div class="d-flex position-relative">
                     <div class="d-flex flex-column justify-content-between border-bottom border-secondary pb-3">
-                        <input class="text-white bg-secondary" type="text" placeholder="Username">
+                        <input class="text-white bg-secondary" type="text" placeholder="Username"></input>
                         <div class="dropdown border border-1 border-white">
                             <button class="dropbtn">Language</button>
                             <div class="dropdown-content">
@@ -68,10 +57,5 @@
                 <button class="px-4 bg-black text-secondary border-1 border-secondary">Delete Profile</button>
             </div>
         </div>
-        
-    </main>
-    <!--Js-->
-    <script src="../Bootstrap/bootstrap-5.3.2/dist/js/bootstrap.min.js"></script>
-    <script src="../js/script.js"></script>
-</body>
-</html>
+    )
+}
